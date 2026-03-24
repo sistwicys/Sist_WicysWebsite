@@ -179,16 +179,9 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com",
     category: "lead",
   },
+  
   {
     id: "9",
-    name: "Nithya Chandrasekaran",
-    role: "Media Team Lead",
-    bio: "Leads media production and visual storytelling to showcase the chapter's events and achievements.",
-    linkedin: "https://linkedin.com",
-    category: "lead",
-  },
-  {
-    id: "10",
     name: "Shugal Mufashira S",
     role: "Content Team Lead",
     bio: "Crafts compelling content and narratives that communicate the chapter's vision and engage the community.",
@@ -196,7 +189,7 @@ export const teamMembers: TeamMember[] = [
     category: "lead",
   },
   {
-    id: "11",
+    id: "10",
     name: "Sanjeevini K B",
     role: "Management Team Lead",
     bio: "Oversees chapter operations and team coordination, ensuring every initiative runs smoothly and on schedule.",
@@ -204,7 +197,7 @@ export const teamMembers: TeamMember[] = [
     category: "lead",
   },
   {
-    id: "12",
+    id: "11",
     name: "Gopinath R",
     role: "Event Coordinator",
     bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
@@ -228,7 +221,7 @@ export const teamMembers: TeamMember[] = [
     category: "coordinator",
   },
   {
-    id: "12",
+    id: "14",
     name: "Haniya Jilan",
     role: "Event Coordinator",
     bio: "Passionate about community building, managing event execution and participant engagement with creativity.",
