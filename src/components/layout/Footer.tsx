@@ -88,7 +88,7 @@ export default function Footer() {
             © {new Date().getFullYear()} WiCyS Student Chapter – Sathyabama. All rights reserved.
           </p>
           <p className="text-gray-600 text-xs">
-            Built with ♥ by WiCyS Design Team
+            Built with ♥ by WiCyS Tech Team
           </p>
         </div>
       </div>
