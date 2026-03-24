@@ -206,7 +206,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "12",
-    name: "Gopinath R",
+    name: "Gopi",
     role: "Event Coordinator",
     bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
     linkedin: "https://www.linkedin.com/in/gopinath2638/",
