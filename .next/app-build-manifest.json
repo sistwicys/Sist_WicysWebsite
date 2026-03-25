@@ -19,6 +19,7 @@
     "/obscura/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/obscura/layout.css",
       "static/chunks/app/obscura/layout.js"
     ]
   }
