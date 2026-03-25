@@ -13,7 +13,7 @@ export default function BackgroundMusic() {
         try {
           await audioRef.current.play();
           setIsPlaying(true);
-        } catch (error) {
+        } catch {
           console.log("Autoplay blocked. User interaction needed to play audio.");
         }
       }

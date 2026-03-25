@@ -1,6 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
+import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import Navbar from "@/components/ctf/Navbar";
@@ -13,7 +12,7 @@ import Footer from "@/components/ctf/Footer";
 
 export default function Home() {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
+  useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
@@ -245,7 +244,7 @@ export default function Home() {
               The Council of WiCyS has opened the vaults. The scrolls are unsealed. Brave apprentices of the digital arts are now summoned to prove their mastery over cryptographic enchantments, steganographic glyphs, web fortress vulnerabilities, and the mysteries of binary incantations.
             </p>
             <p style={{ fontStyle: "italic", color: "var(--color-cream)" }}>
-              "The cipher is not broken by strength, but by seeing what others dare not look at."
+              &quot;The cipher is not broken by strength, but by seeing what others dare not look at.&quot;
             </p>
             
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "1rem" }}>
