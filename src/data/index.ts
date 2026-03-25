@@ -1,3 +1,5 @@
+ 
+
 export interface Event {
   id: string;
   title: string;
@@ -14,15 +16,15 @@ export interface TeamMember {
   role: string;
   bio: string;
   linkedin: string;
-  category: "faculty" | "leadership" | "lead" | "coordinator";
+  category: "faculty" | "leadership" | "core" | "lead" | "coordinator" ;
 }
 
 export const events: Event[] = [
   {
     id: "1",
-    title: "Cyber Hygiene Workshop",
+    title: "Cyber Security Workshop",
     category: "workshop",
-    date: "March 15, 2024",
+    date: "March 15, 2025",
     description:
       "Hands-on session covering password security, phishing awareness, and safe browsing practices for everyday users.",
     status: "past",
@@ -67,7 +69,7 @@ export const events: Event[] = [
     id: "6",
     title: "Incident Response & Digital Forensics",
     category: "lecture",
-    date: "August 22, 2024",
+    date: "August 22, 2025",
     description:
       "Real-world case studies on how organizations handle security breaches and perform forensic investigations.",
     status: "past",
@@ -76,7 +78,7 @@ export const events: Event[] = [
     id: "7",
     title: "Malware Analysis Bootcamp",
     category: "technical",
-    date: "September 14, 2024",
+    date: "September 14, 2025",
     description:
       "Static and dynamic malware analysis techniques using sandboxed environments and reverse engineering tools.",
     status: "past",
@@ -85,7 +87,7 @@ export const events: Event[] = [
     id: "8",
     title: "Cloud Security Essentials",
     category: "workshop",
-    date: "October 9, 2024",
+    date: "October 9, 2025",
     description:
       "AWS and Azure security configurations, IAM best practices, and cloud-native threat detection strategies.",
     status: "past",
@@ -94,7 +96,7 @@ export const events: Event[] = [
     id: "9",
     title: "OBSCURA – Capture The Flag",
     category: "hackathon",
-    date: "April 10, 2026",
+    date: "February 28, 2025",
     description:
       "A magical CTF experience blending cryptography, steganography, and web exploitation challenges in an enchanted theme.",
     status: "upcoming",
@@ -114,66 +116,116 @@ export const events: Event[] = [
 export const teamMembers: TeamMember[] = [
   {
     id: "1",
-    name: "Dr. Priya Ravindran",
+    name: "Dr. N. Nanthini",
     role: "Faculty Coordinator",
-    bio: "Associate Professor, Dept. of CSE with 15+ years in network security research. Passionate about mentoring women in STEM.",
+    bio: "Assistant Professor, Dept. of CSE. Guiding the chapter with academic excellence and professional mentorship.",
     linkedin: "https://linkedin.com",
     category: "faculty",
   },
   {
     id: "2",
-    name: "Ananya Krishnamurthy",
-    role: "Chapter Chair",
-    bio: "Final year B.Tech CSE student specializing in ethical hacking. National-level CTF competitor and security researcher.",
-    linkedin: "https://linkedin.com",
+    name: "Sudhiksha N M",
+    role: "President",
+    bio: "Third year B.Tech CSE student specializing in ethical hacking. National-level CTF competitor and security researcher.",
+    linkedin: "https://www.linkedin.com/in/sudhiksha-n-m-16085a342/",
     category: "leadership",
   },
   {
     id: "3",
-    name: "Divya Subramaniam",
-    role: "Vice Chair",
+    name: "Lakshitha S",
+    role: "Vice President",
     bio: "Third year student with expertise in digital forensics and incident response. Certified in CompTIA Security+.",
     linkedin: "https://linkedin.com",
     category: "leadership",
   },
   {
     id: "4",
-    name: "Keerthana Rajan",
-    role: "Technical Lead",
-    bio: "Passionate about binary exploitation and reverse engineering. Contributes to open-source security tools.",
+    name: "Dharani A",
+    role: "Secretary",
+    bio: "Keeps the chapter organized and running efficiently, managing communications and documentation with precision.",
     linkedin: "https://linkedin.com",
-    category: "lead",
+    category: "core",
   },
   {
     id: "5",
-    name: "Sowmiya Balakrishnan",
-    role: "Design Lead",
-    bio: "Creative technologist blending UI/UX design with security awareness campaigns. Adobe Certified professional.",
+    name: "Samyuktha M",
+    role: "Joint Secretary",
+    bio: "Assists in administrative duties and bridges communication across chapter teams for seamless coordination.",
+    linkedin: "https://linkedin.com",
+    category: "core",
+  },
+  {
+    id: "6",
+    name: "Hadlins Price H",
+    role: "Treasurer",
+    bio: "Manages chapter finances responsibly, ensuring resources are allocated effectively for maximum community impact.",
+    linkedin: "https://linkedin.com",
+    category: "core",
+  },
+  
+  {
+    id: "7",
+    name: "Jensen J",
+    role: "Technical Lead",
+    bio: "Passionate about binary exploitation and reverse engineering. Contributes to open-source security tools.",
+    linkedin: "https://www.linkedin.com/in/jensen-j-989a003b3/",
+    category: "lead",
+  },
+  {
+    id: "8",
+    name: "Anisa Farha N",
+    role: "Marketing Team Lead",
+    bio: "Strategizes and executes marketing campaigns to grow the chapter's reach and presence across campus.",
+    linkedin: "https://linkedin.com",
+    category: "lead",
+  },
+  
+  {
+    id: "9",
+    name: "Shugal Mufashira S",
+    role: "Content Team Lead",
+    bio: "Crafts compelling content and narratives that communicate the chapter's vision and engage the community.",
     linkedin: "https://linkedin.com",
     category: "lead",
   },
   {
-    id: "6",
-    name: "Nithya Chandrasekaran",
-    role: "Event Coordinator",
-    bio: "Organized 10+ successful tech events. Expert in logistics, outreach, and community building strategies.",
+    id: "10",
+    name: "Sanjeevini K B",
+    role: "Management Team Lead",
+    bio: "Oversees chapter operations and team coordination, ensuring every initiative runs smoothly and on schedule.",
     linkedin: "https://linkedin.com",
+    category: "lead",
+  },
+  {
+    id: "11",
+    name: "Gopinath R",
+    role: "Event Coordinator",
+    bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
+    linkedin: "https://www.linkedin.com/in/gopinath2638/",
     category: "coordinator",
   },
   {
-    id: "7",
-    name: "Pavithra Murugan",
+    id: "12",
+    name: "Gopi",
     role: "Event Coordinator",
-    bio: "Specialized in corporate partnerships and sponsorship acquisition. Connects industry with student innovators.",
-    linkedin: "https://linkedin.com",
+    bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
+    linkedin: "https://www.linkedin.com/in/gopinath2638/",
     category: "coordinator",
   },
   {
-    id: "8",
-    name: "Harini Venkatesh",
+    id: "13",
+    name: "Senona Ignatius",
     role: "Event Coordinator",
-    bio: "Manages social media and digital outreach. Data-driven approach to maximizing event participation and impact.",
-    linkedin: "https://linkedin.com",
+    bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
+    linkedin: "https://www.linkedin.com/in/senona-vinoj-2681b3385/",
+    category: "coordinator",
+  },
+  {
+    id: "14",
+    name: "Haniya Jilan",
+    role: "Event Coordinator",
+    bio: "Passionate about community building, managing event execution and participant engagement with creativity.",
+    linkedin: "https://www.linkedin.com/",
     category: "coordinator",
   },
 ];

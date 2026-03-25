@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import "./globals.css";
+import SmoothScrollProvider from "@/components/ui/SmoothScroll";
 
 export const metadata: Metadata = {
-  title: "OBSCURA 2026 | Capture The Flag — Sathyabama Institute of Science and Technology",
+  title: "OBSCURA: The Forbidden Cipher | WiCyS CTF",
   description:
-    "OBSCURA is the flagship techno-cultural fest of Sathyabama Institute of Science and Technology — the collision of innovation and tradition, engineering and artistry.",
+    "OBSCURA — A Magical Capture The Flag Experience. Enter the realm where ancient ciphers meet modern cybersecurity. Register now for the ultimate CTF challenge.",
+  keywords: ["OBSCURA", "CTF", "Capture The Flag", "WiCyS", "Sathyabama", "cybersecurity", "competition"],
 };
 
 import BackgroundMusic from "@/components/ctf/BackgroundMusic";
@@ -18,12 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Fixed mural background */}
-        <div className="bg-mural">
-          <Image src="/ctf/images/hero-bg.png" alt="" aria-hidden="true" fill priority style={{ objectFit: 'cover' }} />
-        </div>
-        <BackgroundMusic />
-        {children}
+        <SmoothScrollProvider>
+          {/* Fixed mural background */}
+          <div className="bg-mural">
+            <Image src="/ctf/images/hero-bg.png" alt="" aria-hidden="true" fill priority style={{ objectFit: 'cover' }} />
+          </div>
+          <BackgroundMusic />
+          {children}
+        </SmoothScrollProvider>
       </body>
     </html>
   );
