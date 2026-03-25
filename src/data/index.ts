@@ -1,9 +1,9 @@
- 
+
 
 export interface Event {
   id: string;
   title: string;
-  category: "workshop" | "lecture" | "hackathon" | "technical" | "discussion" | "competition" | "guest lecture";
+  category: "workshop" | "lecture" | "hackathon" | "technical" | "discussion" | "Competition" | "guest lecture";
   date: string;
   description: string;
   status: "past" | "upcoming";
@@ -16,7 +16,7 @@ export interface TeamMember {
   role: string;
   bio: string;
   linkedin: string;
-  category: "faculty" | "leadership" | "core" | "lead" | "coordinator" ;
+  category: "faculty" | "leadership" | "core" | "lead" | "coordinator";
 }
 
 export const events: Event[] = [
@@ -162,7 +162,7 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com",
     category: "core",
   },
-  
+
   {
     id: "7",
     name: "Jensen J",
@@ -179,7 +179,7 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com",
     category: "lead",
   },
-  
+
   {
     id: "9",
     name: "Shugal Mufashira S",
