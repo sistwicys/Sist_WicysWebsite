@@ -67,11 +67,11 @@ export default function Footer() {
               CONTACT US
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
-              <a href="mailto:team@sathyabama-wicys.org" style={{
+              <a href="mailto:sistwicys@gmail.com" style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.3s"
               }}>
                 <Mail size={18} />
-                team@sathyabama-wicys.org
+                sistwicys@gmail.com
               </a>
               <a href="tel:+919391131165" style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.3s"
