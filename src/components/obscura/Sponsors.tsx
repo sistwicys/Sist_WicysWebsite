@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 
-const titleSponsor = { name: "RIKŪN", color: "#1a1a6e" };
 
 const partners = [
   { category: "Events Partner", name: "RedTeam Hacker Academy", logo: "/logo/Rdteamlogo.jpeg" },
@@ -49,43 +48,6 @@ export default function Sponsors() {
         }}>
           Proudly supported by industry leaders
         </p>
-      </motion.div>
-
-      {/* Title Sponsor */}
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        style={{ maxWidth: 900, margin: "2rem auto" }}
-      >
-        <div style={{
-          textAlign: "center", marginBottom: "1rem",
-          fontFamily: "var(--font-heading)", fontSize: "0.75rem",
-          letterSpacing: "0.2em", textTransform: "uppercase",
-          color: "var(--color-gold)",
-        }}>
-          Title Sponsor
-        </div>
-        <motion.div 
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.98 }}
-          className="sponsor-card-title"
-          style={{ cursor: "pointer" }}
-        >
-          <div style={{
-            background: "#fff", borderRadius: 12, padding: "1.5rem 3rem",
-            display: "inline-block",
-          }}>
-            <span style={{
-              fontFamily: "var(--font-heading)", fontSize: "2.5rem",
-              fontWeight: 900, color: titleSponsor.color,
-              letterSpacing: "0.05em",
-            }}>
-              {titleSponsor.name}
-            </span>
-          </div>
-        </motion.div>
       </motion.div>
 
       {/* Partners Grid */}
