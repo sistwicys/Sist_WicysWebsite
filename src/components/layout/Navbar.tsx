@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 
 const navLinks = [
@@ -43,13 +44,15 @@ export default function Navbar() {
       }}
     >
       {/* Logo */}
-      <Link href="/" className="flex items-center">
-        <img
-          src="/wicys-logo-new.png"
-          alt="WiCyS"
-          style={{ height: 38, width: "auto", objectFit: "contain" }}
-        />
-      </Link>
+       <Link href="/" className="flex items-center">
+         <Image
+           src="/wicys-logo-new.png"
+           alt="WiCyS"
+           width={120}
+           height={40}
+           style={{ objectFit: "contain" }}
+         />
+       </Link>
 
       {/* Desktop links */}
       <div className="hidden md:flex items-center gap-1">

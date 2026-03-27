@@ -2,14 +2,33 @@
 import { motion } from "framer-motion";
 
 const rules = [
-  "All participants must carry a valid college identity card.",
-  "No automated tools for flag submission are permitted.",
-  "Each team may have no more than 3 members.",
-  "Internet access for hints is strictly forbidden during the event.",
-  "Flags must be submitted in the exact format: OBSCURA{...}",
-  "Any participant caught cheating will be immediately disqualified.",
-  "Organiser decisions are final and binding.",
-  "Challenges may only be attempted through the designated platform.",
+  "Event Overview",
+  "This is a Jeopardy style CTF where teams compete to solve cybersecurity challenges and capture flags.",
+  "Each challenge contains a flag string that must be submitted to the scoreboard platform.",
+  "Mode: Offline",
+  "Duration: 8 hours",
+  "Team Size: Maximum 3 members",
+  "",
+  "Team Formation Rules",
+  "Participants can compete individually or in teams of up to 3 members.",
+  "Team members must be declared at the time of registration.",
+  "Team composition is final and cannot be changed after registration.",
+  "Replacement or addition of members is strictly not allowed.",
+  "If a registered team member does not attend, the remaining members must continue without replacement.",
+  "Cross-college teams allowed",
+  "",
+  "Requirements",
+  "All participants must carry valid college ID cards.",
+  "BYOD: Every participant must bring their own laptops",
+  "Bring your own extension box",
+  "",
+  "Prohibited Actions",
+  "Attacking the CTF platform or scoreboard infrastructure",
+  "Denial-of-Service (DoS/DDoS) attacks",
+  "Attacking other teams’ machines or networks",
+  "Flag sharing between teams",
+  "Exploiting unintended vulnerabilities in the platform itself",
+  "Brute-forcing the flag submission endpoint"
 ];
 
 export default function SacredCodex() {
@@ -54,70 +73,70 @@ export default function SacredCodex() {
         </div>
       </motion.div>
 
-      {/* Rules Container */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        whileHover={{ scale: 1.01, borderColor: "rgba(230, 126, 34, 0.2)" }}
-        whileTap={{ scale: 0.99 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        style={{
-          maxWidth: "900px",
-          width: "100%",
-          background: "rgba(10, 5, 5, 0.4)",
-          backdropFilter: "blur(20px)",
-          border: "1px solid rgba(230, 126, 34, 0.1)",
-          borderRadius: "24px",
-          padding: "3rem",
-          boxShadow: "0 20px 50px rgba(0,0,0,0.5)",
-          display: "flex",
-          flexDirection: "column",
-          gap: "1.5rem",
-          cursor: "default"
-        }}
-      >
-        {rules.map((rule, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
-            transition={{ delay: index * 0.1, duration: 0.5 }}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "2rem",
-              padding: "0.5rem 0",
-            }}
-          >
-            <div style={{
-              width: "32px",
-              height: "32px",
-              borderRadius: "50%",
-              border: "1px solid rgba(230, 126, 34, 0.4)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "0.8rem",
-              fontFamily: "var(--font-heading)",
-              color: "#e67e22",
-              flexShrink: 0,
-            }}>
-              {index + 1}
-            </div>
-            <p style={{
-              fontFamily: "var(--font-body)",
-              fontSize: "1.1rem",
-              color: "rgba(255, 255, 255, 0.8)",
-              lineHeight: 1.6,
-              margin: 0,
-            }}>
-              {rule}
-            </p>
-          </motion.div>
-        ))}
-      </motion.div>
+       {/* Rules Container */}
+       <motion.div
+         initial={{ opacity: 0, scale: 0.95 }}
+         whileInView={{ opacity: 1, scale: 1 }}
+         whileHover={{ scale: 1.01, borderColor: "rgba(230, 126, 34, 0.2)" }}
+         whileTap={{ scale: 0.99 }}
+         viewport={{ once: false }}
+         transition={{ duration: 0.8, delay: 0.2 }}
+         style={{
+           maxWidth: "900px",
+           width: "100%",
+           background: "rgba(10, 5, 5, 0.4)",
+           backdropFilter: "blur(20px)",
+           border: "1px solid rgba(230, 126, 34, 0.1)",
+           borderRadius: "24px",
+           padding: "3rem",
+           boxShadow: "0 20px 50px rgba(0,0,0,0.5)",
+           display: "flex",
+           flexDirection: "column",
+           gap: "0.5rem",
+           cursor: "default"
+         }}
+       >
+         {rules.map((rule, index) => {
+           // Determine the type of rule for styling
+           const isSectionHeader = ["Event Overview", "Team Formation Rules", "Requirements", "Prohibited Actions"].includes(rule);
+           const isEmpty = rule === "";
+           const isBulletPoint = rule.startsWith("•");
+           
+           return (
+             <motion.div
+               key={index}
+               initial={{ opacity: 0, y: isEmpty ? 0 : 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: false }}
+               transition={{ delay: index * 0.05, duration: 0.5 }}
+               style={{
+                 display: "flex",
+                 flexDirection: "column",
+                 gap: isEmpty ? "0.25rem" : isSectionHeader ? "0.75rem" : "0.5rem",
+                 alignItems: "center"
+               }}
+             >
+               {!isEmpty && (
+                 <p style={{
+                   fontFamily: "var(--font-heading)",
+                   fontSize: isSectionHeader ? "1.25rem" : "1.1rem",
+                   fontWeight: isSectionHeader ? 800 : 600,
+                   color: isSectionHeader ? "#f39c12" : "rgba(255, 255, 255, 0.9)",
+                   letterSpacing: isSectionHeader ? "0.03em" : "0",
+                   textTransform: isSectionHeader ? "none" : "none",
+                   margin: 0,
+                   lineHeight: 1.4,
+                   textAlign: isSectionHeader ? "center" : "left",
+                   paddingLeft: isBulletPoint ? "2rem" : 0,
+                   paddingRight: isBulletPoint ? "1rem" : 0
+                 }}>
+                   {rule}
+                 </p>
+               )}
+             </motion.div>
+           );
+         })}
+       </motion.div>
 
       {/* Footer link style from image (optional addition) */}
       <motion.div

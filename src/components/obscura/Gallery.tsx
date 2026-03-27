@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 
 const galleryImages = [
   { src: "/ctf/images/gallery-1.png", alt: "Concert performance" },
@@ -73,11 +74,11 @@ export default function Gallery() {
               width: "max-content",
             }}
           >
-            {galleryImages.map((img, i) => (
-              <div key={i} className="gallery-item" style={{ flexShrink: 0 }}>
-                <img src={img.src} alt={img.alt} loading="lazy" />
-              </div>
-            ))}
+             {galleryImages.map((img, i) => (
+               <div key={i} className="gallery-item" style={{ flexShrink: 0 }}>
+                 <Image src={img.src} alt={img.alt} loading="lazy" width={400} height={300} style={{ objectFit: 'cover' }} />
+               </div>
+             ))}
           </motion.div>
         </div>
       </div>

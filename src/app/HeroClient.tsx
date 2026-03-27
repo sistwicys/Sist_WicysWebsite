@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 
 export default function HeroClient() {
@@ -116,14 +117,16 @@ export default function HeroClient() {
 
 
 
-        {/* Logo */}
-        <div className="flex justify-center mb-2">
-          <img
-            src="/wicys-logo-new.png"
-            alt="WiCyS – Women in CyberSecurity"
-            style={{ maxWidth: 480, width: "100%", height: "auto", objectFit: "contain" }}
-          />
-        </div>
+          {/* Logo */}
+          <div className="flex justify-center mb-2">
+            <Image
+              src="/wicys-logo-new.png"
+              alt="WiCyS – Women in CyberSecurity"
+              width={480}
+              height={280} /* Maintaining 480x280 aspect ratio (~1.71:1) */
+              style={{ maxWidth: "100%", objectFit: "contain" }}
+            />
+          </div>
 
         {/* Chapter line */}
         <p

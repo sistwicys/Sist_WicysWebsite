@@ -204,35 +204,37 @@ export default function Home() {
             <Countdown />
           </motion.div>
 
-          {/* Register Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            style={{ marginTop: "2rem" }}
-          >
-            <a
-              href="#open-the-portal"
-              style={{
-                display: "inline-block",
-                padding: "1rem 3rem",
-                background: "linear-gradient(135deg, #dc2626 0%, #fb923c 100%)",
-                border: "1px solid rgba(251, 146, 60, 0.5)",
-                borderRadius: "8px",
-                color: "#fef3c7",
-                fontFamily: "var(--font-heading)",
-                fontSize: "1rem",
-                fontWeight: 700,
-                textTransform: "uppercase",
-                letterSpacing: "0.1em",
-                textDecoration: "none",
-                boxShadow: "0 4px 20px rgba(220, 38, 38, 0.4)",
-                transition: "all 0.3s ease",
-              }}
-            >
-              Register Now
-            </a>
-          </motion.div>
+           {/* Register Button */}
+           <motion.div
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ delay: 1, duration: 0.8 }}
+             style={{ marginTop: "2rem" }}
+           >
+             <a
+               href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+               target="_blank"
+               rel="noopener noreferrer"
+               style={{
+                 display: "inline-block",
+                 padding: "1rem 3rem",
+                 background: "linear-gradient(135deg, #dc2626 0%, #fb923c 100%)",
+                 border: "1px solid rgba(251, 146, 60, 0.5)",
+                 borderRadius: "8px",
+                 color: "#fef3c7",
+                 fontFamily: "var(--font-heading)",
+                 fontSize: "1rem",
+                 fontWeight: 700,
+                 textTransform: "uppercase",
+                 letterSpacing: "0.1em",
+                 textDecoration: "none",
+                 boxShadow: "0 4px 20px rgba(220, 38, 38, 0.4)",
+                 transition: "all 0.3s ease",
+               }}
+             >
+               Register Now
+             </a>
+           </motion.div>
         </motion.div>
       </section>
 

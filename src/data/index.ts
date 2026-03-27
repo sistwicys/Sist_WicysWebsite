@@ -16,7 +16,7 @@ export interface TeamMember {
   role: string;
   bio: string;
   linkedin: string;
-  category: "faculty" | "leadership" | "core" | "lead" | "coordinator";
+  category: "faculty" | "leadership" | "core" | "lead" | "coordinator" | "chair";
 }
 
 export const events: Event[] = [
@@ -149,14 +149,14 @@ export const teamMembers: TeamMember[] = [
     category: "core",
   },
 
-  {
-    id: "7",
-    name: "Jensen J",
-    role: "Technical Lead",
-    bio: "Passionate about binary exploitation and reverse engineering. Contributes to open-source security tools.",
-    linkedin: "https://www.linkedin.com/in/jensen-j-989a003b3/",
-    category: "lead",
-  },
+   {
+     id: "7",
+     name: "Jensen J",
+     role: "Research & Development",
+     bio: "Passionate about binary exploitation and reverse engineering. Contributes to open-source security tools.",
+     linkedin: "https://www.linkedin.com/in/jensen-j-989a003b3/",
+     category: "lead",
+   },
   {
     id: "8",
     name: "Anisa Farha N",
@@ -182,38 +182,62 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com",
     category: "lead",
   },
-  {
-    id: "11",
-    name: "Gopinath R",
-    role: "Event Coordinator",
-    bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
-    linkedin: "https://www.linkedin.com/in/gopinath2638/",
-    category: "coordinator",
-  },
-  {
-    id: "12",
-    name: "Gopi",
-    role: "Event Coordinator",
-    bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
-    linkedin: "https://www.linkedin.com/in/gopinath2638/",
-    category: "coordinator",
-  },
-  {
-    id: "13",
-    name: "Senona Ignatius",
-    role: "Event Coordinator",
-    bio: "Brings energy and precision to event planning, ensuring every chapter event is memorable and well-executed.",
-    linkedin: "https://www.linkedin.com/in/senona-vinoj-2681b3385/",
-    category: "coordinator",
-  },
-  {
-    id: "14",
-    name: "Haniya Jilan",
-    role: "Event Coordinator",
-    bio: "Passionate about community building, managing event execution and participant engagement with creativity.",
-    linkedin: "https://www.linkedin.com/",
-    category: "coordinator",
-  },
+   {
+     id: "11",
+     name: "Joe",
+     role: "Event Coordinator",
+     bio: "2nd year student assisting with event planning and coordination.",
+     linkedin: "https://linkedin.com",
+     category: "coordinator",
+   },
+   {
+     id: "12",
+     name: "Sam Daniel",
+     role: "Event Coordinator",
+     bio: "2nd year student assisting with event planning and coordination.",
+     linkedin: "https://linkedin.com",
+     category: "coordinator",
+   },
+   {
+     id: "13",
+     name: "Muthu Lakshmanan",
+     role: "Event Coordinator",
+     bio: "2nd year student assisting with event planning and coordination.",
+     linkedin: "https://linkedin.com",
+     category: "coordinator",
+   },
+   {
+     id: "14",
+     name: "Roger Raj A",
+     role: "Chairperson",
+     bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
+     linkedin: "https://linkedin.com",
+     category: "chair",
+   },
+   {
+     id: "15",
+     name: "Buvan Shankar P M",
+     role: "Chairperson",
+     bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
+     linkedin: "https://linkedin.com",
+     category: "chair",
+   },
+   {
+     id: "16",
+     name: "Mrinaal Roshan R",
+     role: "Chairperson",
+     bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
+     linkedin: "https://linkedin.com",
+     category: "chair",
+   },
+   {
+     id: "17",
+     name: "Mohammed Tahsin K J",
+     role: "Chairperson",
+     bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
+     linkedin: "https://linkedin.com",
+     category: "chair",
+   },
 ];
 
 export const obscuraDate = new Date("2026-04-10T09:00:00");

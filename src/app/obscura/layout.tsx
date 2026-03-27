@@ -11,23 +11,19 @@ export const metadata: Metadata = {
   keywords: ["OBSCURA", "CTF", "Capture The Flag", "WiCyS", "Sathyabama", "cybersecurity", "competition"],
 };
 
-export default function RootLayout({
+export default function ObscuraLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <SmoothScrollProvider>
-          {/* Fixed mural background */}
-          <div className="bg-mural">
-            <Image src="/ctf/images/hero-bg.png" alt="" aria-hidden="true" fill priority style={{ objectFit: 'cover' }} />
-          </div>
-          <BackgroundMusic />
-          {children}
-        </SmoothScrollProvider>
-      </body>
-    </html>
+    <SmoothScrollProvider>
+      {/* Fixed mural background */}
+      <div className="bg-mural">
+        <Image src="/ctf/images/hero-bg.png" alt="" aria-hidden="true" fill priority style={{ objectFit: 'cover' }} />
+      </div>
+      <BackgroundMusic />
+      {children}
+    </SmoothScrollProvider>
   );
 }
