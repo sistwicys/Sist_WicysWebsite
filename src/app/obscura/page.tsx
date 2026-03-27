@@ -212,7 +212,7 @@ export default function Home() {
              style={{ marginTop: "2rem" }}
            >
              <a
-               href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+               //href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
                target="_blank"
                rel="noopener noreferrer"
                style={{

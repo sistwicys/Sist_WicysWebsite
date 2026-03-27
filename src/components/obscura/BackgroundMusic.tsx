@@ -73,7 +73,7 @@ export default function BackgroundMusic() {
         }}
         title={isPlaying ? "Pause Music" : "Play Music"}
       >
-        {isPlaying ? "📻" : "🔇"}
+        {isPlaying ? "🔊" : "🔇"}
       </button>
     </>
   );

@@ -191,7 +191,7 @@ export default function Footer() {
             letterSpacing: "0.05em",
             textAlign: "center"
           }}>
-            © 2026 OBSCURA Capture The Flag — Sathyabama Institute of Science and Technology. All rights reserved.
+            © 2026 OBSCURA Capture The Flag — WiCyS Student Chapter, Sathyabama Institute of Science and Technology. All rights reserved.
           </p>
           
           <button 
