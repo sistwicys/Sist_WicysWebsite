@@ -73,7 +73,7 @@ export default function Footer() {
                 <Mail size={18} />
                 sistwicys@gmail.com
               </a>
-              <a href="tel:+919391131165" style={{
+              <a href="tel:+9150225961 ~MR.Arjun tel:+6369113218 ~Christopher Jose; " style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.3s"
               }}>
                 <Phone size={18} />

@@ -13,8 +13,8 @@ export default function UpcomingPage() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Target date: April 10, 2026
-    const targetDate = new Date("2026-04-10T09:00:00+05:30").getTime();
+    // Target date: April 7, 2026
+    const targetDate = new Date("2026-04-07T09:00:00+05:30").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
