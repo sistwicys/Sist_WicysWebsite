@@ -240,4 +240,4 @@ export const teamMembers: TeamMember[] = [
    },
 ];
 
-export const obscuraDate = new Date("2026-04-07T09:00:00");
+export const obscuraDate = new Date("2026-04-07T23:59:59+05:30");
