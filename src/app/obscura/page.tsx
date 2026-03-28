@@ -6,7 +6,6 @@ import Navbar from "@/components/obscura/Navbar";
 import Countdown from "@/components/obscura/Countdown";
 import SacredCodex from "@/components/obscura/SacredCodex";
 import Sponsors from "@/components/obscura/Sponsors";
-import ArcaneOrders from "@/components/obscura/ArcaneOrders";
 import Treasures from "@/components/obscura/Treasures";
 import Footer from "@/components/obscura/Footer";
 
@@ -340,9 +339,6 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* Arcane Orders Section */}
-      <ArcaneOrders />
 
       {/* Treasures Section */}
       <Treasures />

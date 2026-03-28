@@ -59,12 +59,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-burgundy);
+  background: var(--color-blue-dark);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-maroon);
+  background: #1a2b5c;
 }
 
 /* Background mural that persists across sections */
