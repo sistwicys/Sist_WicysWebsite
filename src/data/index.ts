@@ -268,7 +268,7 @@ export const teamMembers: TeamMember[] = [
       name: "K Durgashree",
       role: "Event Coordinator",
       bio: "2nd year student assisting with event planning and coordination.",
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/durga-shree-721617340?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       category: "coordinator",
     },
   ];
