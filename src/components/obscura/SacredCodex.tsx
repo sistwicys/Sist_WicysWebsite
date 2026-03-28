@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const rules = [
   "Event Overview",
-  "This is a Jeopardy style CTF where teams compete to solve cybersecurity challenges and capture flags.",
+  "This is a Jeopardy style National Level CTF where teams compete to solve cybersecurity challenges and capture flags.",
   "Each challenge contains a flag string that must be submitted to the scoreboard platform.",
   "📅 Date: 10th April 2026",
   "📍 Mode: Offline",
@@ -13,7 +13,7 @@ const rules = [
   "🎓 Open to students and industry professionals",
   "",
   "Team Formation Rules",
-  "Participants must compete in teams of 2 to 3 members only",
+  "Participants must compete in teams of 3 members only",
   "Team members must be declared at the time of registration.",
   "Team composition is final and cannot be changed after registration.",
   "Replacement or addition of members is strictly not allowed.",
