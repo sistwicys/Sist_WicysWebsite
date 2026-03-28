@@ -8,6 +8,7 @@ export interface Event {
   description: string;
   status: "past" | "upcoming";
   highlight?: boolean;
+  image?: string;
 }
 
 export interface TeamMember {
@@ -64,6 +65,7 @@ export const events: Event[] = [
     date: "Coming Soon",
     description: "A beginner-friendly workshop to kickstart your cybersecurity journey.",
     status: "past",
+    image: "/event/Hello World.jpg.jpeg",
   },
   {
     id: "12",
@@ -72,6 +74,7 @@ export const events: Event[] = [
     date: "Coming Soon",
     description: "Defend the digital fortress - a cybersecurity challenge event.",
     status: "past",
+    image: "/event/Gatekeepers.jpg.jpeg",
   },
   {
     id: "13",
@@ -80,6 +83,7 @@ export const events: Event[] = [
     date: "Coming Soon",
     description: "Breaking barriers in cybersecurity with advanced techniques.",
     status: "past",
+    image: "/event/AntiGravity.jpg.jpeg",
   },
   {
     id: "14",
@@ -96,6 +100,7 @@ export const events: Event[] = [
     date: "Coming Soon",
     description: "A competitive event for the outside-the-box thinkers.",
     status: "past",
+    image: "/event/Outsider.jpg.jpeg",
   },
 ];
 

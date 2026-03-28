@@ -57,6 +57,7 @@ export default function ArchivePage() {
                   description={event.description}
                   index={index}
                   highlight={event.highlight}
+                  image={event.image}
                 />
               ))}
             </div>
@@ -87,6 +88,7 @@ export default function ArchivePage() {
                   description={event.description}
                   index={index}
                   highlight={event.highlight}
+                  image={event.image}
                 />
               ))}
             </div>

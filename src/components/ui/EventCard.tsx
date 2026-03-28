@@ -10,6 +10,7 @@ interface EventCardProps {
   description: string;
   index?: number;
   highlight?: boolean;
+  image?: string;
 }
 
 const categoryColors: Record<string, string> = {
@@ -39,6 +40,7 @@ export function EventCard({
   description,
   index = 0,
   highlight = false,
+  image,
 }: EventCardProps) {
   return (
     <motion.div
@@ -55,31 +57,41 @@ export function EventCard({
       )}
     >
       <div className="h-40 bg-gradient-to-br from-dark-600 to-dark-500 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-5xl opacity-30 group-hover:opacity-50 transition-opacity duration-300">
-            {categoryIcons[category] || "🔒"}
-          </span>
-        </div>
-          <div
-            className={cn(
-              "absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300",
-              category === "hackathon"
-                ? "bg-gradient-to-br from-green-500 to-teal-600"
-                : category === "workshop"
-                ? "bg-gradient-to-br from-blue-500 to-indigo-600"
-                : category === "lecture"
-                ? "bg-gradient-to-br from-purple-500 to-pink-600"
-                : category === "competition"
-                ? "bg-gradient-to-br from-pink-500 to-rose-600"
-                : category === "discussion"
-                ? "bg-gradient-to-br from-cyan-500 to-blue-600"
-                : category === "guest lecture"
-                ? "bg-gradient-to-br from-amber-500 to-yellow-600"
-                : "bg-gradient-to-br from-orange-500 to-red-600"
-            )}
+        {image ? (
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-cover"
           />
+        ) : (
+          <>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-5xl opacity-30 group-hover:opacity-50 transition-opacity duration-300">
+                {categoryIcons[category] || "🔒"}
+              </span>
+            </div>
+            <div
+              className={cn(
+                "absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300",
+                category === "hackathon"
+                  ? "bg-gradient-to-br from-green-500 to-teal-600"
+                  : category === "workshop"
+                  ? "bg-gradient-to-br from-blue-500 to-indigo-600"
+                  : category === "lecture"
+                  ? "bg-gradient-to-br from-purple-500 to-pink-600"
+                  : category === "competition"
+                  ? "bg-gradient-to-br from-pink-500 to-rose-600"
+                  : category === "discussion"
+                  ? "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  : category === "guest lecture"
+                  ? "bg-gradient-to-br from-amber-500 to-yellow-600"
+                  : "bg-gradient-to-br from-orange-500 to-red-600"
+              )}
+            />
+          </>
+        )}
         {highlight && (
-          <div className="absolute top-3 right-3 px-2 py-1 bg-amber-500 text-dark-900 text-xs font-bold rounded-full">
+          <div className="absolute top-3 right-3 px-2 py-1 bg-amber-500 text-dark-900 text-xs font-bold rounded-full z-10">
             ✦ Featured
           </div>
         )}
