@@ -102,6 +102,22 @@ export const events: Event[] = [
     status: "past",
     image: "/event/Outsider.jpg.jpeg",
   },
+  {
+    id: "16",
+    title: "Mind.Exe",
+    category: "technical",
+    date: "Coming Soon",
+    description: "A technical deep-dive into malware analysis, reverse engineering, and digital forensics.",
+    status: "past",
+  },
+  {
+    id: "17",
+    title: "Oracle",
+    category: "workshop",
+    date: "Coming Soon",
+    description: "An interactive workshop on cloud security, database protection, and secure system architecture.",
+    status: "past",
+  },
 ];
 
 export const teamMembers: TeamMember[] = [
