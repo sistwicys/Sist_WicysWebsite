@@ -97,7 +97,7 @@ export default function UpcomingPage() {
                     className="text-base mb-6"
                     style={{ color: "var(--color-orange)" }}
                   >
-                    A Magical Capture The Flag Experience
+                    A Magical National Level Capture The Flag Experience
                   </p>
                   
                   {/* Event details */}
