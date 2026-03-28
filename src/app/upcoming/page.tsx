@@ -140,7 +140,7 @@ export default function UpcomingPage() {
                       </svg>
                     </Link>
                     <a
-                      //href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSffz93BunAfJZpZ77awTWiuEhx9R5FMeuzMt4R9-wGAdTTUew/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-all"
