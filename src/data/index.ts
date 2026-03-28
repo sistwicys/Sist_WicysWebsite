@@ -255,14 +255,22 @@ export const teamMembers: TeamMember[] = [
      linkedin: "https://www.linkedin.com/in/mrinaal-roshan-89bb55369?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "chair",
    },
-   {
-     id: "17",
-     name: "Mohammed Tahsin K J",
-     role: "Chairperson",
-     bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
-     linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-     category: "chair",
-   },
-];
+    {
+      id: "17",
+      name: "Mohammed Tahsin K J",
+      role: "Chairperson",
+      bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
+      linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      category: "chair",
+    },
+    {
+      id: "18",
+      name: "K Durgashree",
+      role: "Event Coordinator",
+      bio: "2nd year student assisting with event planning and coordination.",
+      linkedin: "https://linkedin.com",
+      category: "coordinator",
+    },
+  ];
 
 export const obscuraDate = new Date("2026-04-07T23:59:59+05:30");
