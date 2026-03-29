@@ -18,6 +18,7 @@ export interface TeamMember {
   bio: string;
   linkedin: string;
   category: "faculty" | "leadership" | "core" | "lead" | "coordinator" | "chair";
+  image?: string;
 }
 
 export const events: Event[] = [
@@ -39,7 +40,6 @@ export const events: Event[] = [
     description:
       "A panel discussion on the societal impacts of women in cybersecurity",
     status: "past",
-    image: "/event/society.jpg",
   },
   {
     id: "5",
@@ -49,13 +49,22 @@ export const events: Event[] = [
     description:
       "A conversation on women and cancer by Dr. Shilpa Germaine Alfred.",
     status: "past",
-    image: "/event/sheprevails.jpeg",
+  },
+  {
+    id: "9",
+    title: "OBSCURA – Capture The Flag",
+    category: "hackathon",
+    date: "February 28, 2025",
+    description:
+      "A magical National Level CTF experience blending cryptography, steganography, and web exploitation challenges in an enchanted theme.",
+    status: "past",
+    highlight: true,
   },
   {
     id: "11",
     title: "Hello World",
     category: "workshop",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "A beginner-friendly workshop to kickstart your cybersecurity journey.",
     status: "past",
     image: "/event/Hello World.jpg.jpeg",
@@ -64,7 +73,7 @@ export const events: Event[] = [
     id: "12",
     title: "Gatekeepers",
     category: "hackathon",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "Defend the digital fortress - a cybersecurity challenge event.",
     status: "past",
     image: "/event/Gatekeepers.jpg.jpeg",
@@ -73,7 +82,7 @@ export const events: Event[] = [
     id: "13",
     title: "Antigravity",
     category: "technical",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "Breaking barriers in cybersecurity with advanced techniques.",
     status: "past",
     image: "/event/AntiGravity.jpg.jpeg",
@@ -82,7 +91,7 @@ export const events: Event[] = [
     id: "14",
     title: "Explorer",
     category: "workshop",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "Explore the unknown realms of ethical hacking and penetration testing.",
     status: "past",
     image: "/event/Explorers.jpg",
@@ -91,7 +100,7 @@ export const events: Event[] = [
     id: "15",
     title: "Outsiders",
     category: "competition",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "A competitive event for the outside-the-box thinkers.",
     status: "past",
     image: "/event/Outsider.jpg.jpeg",
@@ -100,7 +109,7 @@ export const events: Event[] = [
     id: "16",
     title: "Mind.Exe",
     category: "technical",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "A technical deep-dive into malware analysis, reverse engineering, and digital forensics.",
     status: "past",
     image: "/event/mindexe.jpg",
@@ -109,7 +118,7 @@ export const events: Event[] = [
     id: "17",
     title: "Oracle",
     category: "workshop",
-    date: "March 15, 2025",
+    date: "Coming Soon",
     description: "An interactive workshop on cloud security, database protection, and secure system architecture.",
     status: "past",
     image: "/event/Oracle.jpg",
@@ -132,6 +141,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Third year B.Tech CSE student specializing in ethical hacking. National-level CTF competitor and security researcher.",
     linkedin: "https://www.linkedin.com/in/sudhiksha-n-m-16085a342/",
     category: "leadership",
+    
   },
   {
     id: "3",
@@ -214,6 +224,7 @@ export const teamMembers: TeamMember[] = [
      bio: "2nd year student assisting with event planning and coordination.",
      linkedin: "https://www.linkedin.com/in/sam-daniel-4178bb339?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
      category: "coordinator",
+     image: "/profile/SamDaniel.jpeg",
    },
    {
      id: "13",
@@ -228,7 +239,7 @@ export const teamMembers: TeamMember[] = [
      name: "Roger Raj A",
      role: "Chairperson",
      bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
-     linkedin: "https://linkedin.com",
+     linkedin: "https://www.linkedin.com/in/roger-raj-84ba3b33b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "chair",
    },
    {
@@ -247,22 +258,22 @@ export const teamMembers: TeamMember[] = [
      linkedin: "https://www.linkedin.com/in/mrinaal-roshan-89bb55369?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "chair",
    },
-    {
-      id: "17",
-      name: "Mohammed Tahsin K J",
-      role: "Chairperson",
-      bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
-      linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      category: "chair",
-    },
-    {
-      id: "18",
-      name: "K Durgashree",
-      role: "Event Coordinator",
-      bio: "2nd year student assisting with event planning and coordination.",
-      linkedin: "https://www.linkedin.com/in/durga-shree-721617340?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      category: "coordinator",
-    },
-  ];
+   {
+     id: "17",
+     name: "Mohammed Tahsin K J",
+     role: "Chairperson",
+     bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
+     linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+     category: "chair",
+   },
+   {
+     id: "18",
+     name: "K Durgashree",
+     role: "Event Coordinator",
+     bio: "2nd year student assisting with event planning and coordination.",
+     linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+     category: "coordinator",
+   },
+];
 
 export const obscuraDate = new Date("2026-04-07T23:59:59+05:30");
