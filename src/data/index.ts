@@ -158,6 +158,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Keeps the chapter organized and running efficiently, managing communications and documentation with precision.",
     linkedin: "https://www.linkedin.com/in/dharani-alagarsamy-70589a352/",
     category: "core",
+    image: "/profile/Dharani.jpeg",
   },
   {
     id: "5",
@@ -191,6 +192,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Strategizes and executes marketing campaigns to grow the chapter's reach and presence across campus.",
     linkedin: "https://www.linkedin.com/in/anisafarha58?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     category: "lead",
+    image: "/profile/Anisa.jpeg",
   },
 
   {
@@ -200,6 +202,8 @@ export const teamMembers: TeamMember[] = [
     bio: "Crafts compelling content and narratives that communicate the chapter's vision and engage the community.",
     linkedin: "https://linkedin.com",
     category: "lead",
+    image: "/profile/Shugal.jpeg",
+
   },
   {
     id: "10",
@@ -208,6 +212,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Oversees chapter operations and team coordination, ensuring every initiative runs smoothly and on schedule.",
     linkedin: "https://www.linkedin.com/in/sanjeevini-kumaravel-72bb2437a?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     category: "lead",
+    image: "/profile/Sanjeevini.jpeg",
   },
    {
      id: "11",
@@ -216,6 +221,7 @@ export const teamMembers: TeamMember[] = [
      bio: "2nd year student assisting with event planning and coordination.",
      linkedin: "https://www.linkedin.com/in/claims-jose-christoper?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "coordinator",
+     image: "/profile/Joe.jpeg",
    },
    {
      id: "12",
@@ -233,6 +239,7 @@ export const teamMembers: TeamMember[] = [
      bio: "2nd year student assisting with event planning and coordination.",
      linkedin: "https://www.linkedin.com/in/muthu-lakshmanan-s-a32827323?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "coordinator",
+     image: "/profile/MuthuLakshmanan.jpeg",
    },
    {
      id: "14",
