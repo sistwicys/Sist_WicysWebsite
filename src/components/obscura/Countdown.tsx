@@ -13,7 +13,7 @@ export default function Countdown() {
 
   useEffect(() => {
     // Target date: April 7, 2026 (fest date)
-    const targetDate = new Date("2026-04-07T00:00:00+05:30").getTime();
+    const targetDate = new Date("2026-04-07T23:59:59+05:30").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
