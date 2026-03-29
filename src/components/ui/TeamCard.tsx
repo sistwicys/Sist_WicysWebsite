@@ -32,7 +32,7 @@ export function TeamCard({ name, role, bio, linkedin, image, index = 0, classNam
       <div className="flex flex-col items-center text-center h-full justify-start">
         <div className="w-20 h-20 rounded-full overflow-hidden bg-gradient-to-br from-brand-purple to-brand-blue flex items-center justify-center text-white font-bold text-xl mb-4 group-hover:shadow-glow-purple transition-all duration-300">
           {image ? (
-            <img
+            <Image
               src={image}
               alt={name}
               width={80}
