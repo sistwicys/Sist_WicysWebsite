@@ -14,6 +14,7 @@ interface TeamCardProps {
 }
 
 export function TeamCard({ name, role, bio, linkedin, image, index = 0, className = '' }: TeamCardProps) {
+  //console.log("IMAGE:", image);
   const initials = name
     .split(" ")
     .map((n) => n[0])
@@ -30,17 +31,18 @@ export function TeamCard({ name, role, bio, linkedin, image, index = 0, classNam
       className={`bg-dark-700 border border-dark-500 hover:border-brand-purple/50 rounded-xl p-6 transition-all duration-300 group ${className}`}
     >
       <div className="flex flex-col items-center text-center h-full justify-start">
-        <div className="w-20 h-20 rounded-full overflow-hidden bg-gradient-to-br from-brand-purple to-brand-blue flex items-center justify-center text-white font-bold text-xl mb-4 group-hover:shadow-glow-purple transition-all duration-300">
+        <div className="w-20 h-20 relative rounded-full overflow-hidden bg-gradient-to-br from-brand-purple to-brand-blue mb-4 group-hover:shadow-glow-purple transition-all duration-300">
           {image ? (
             <Image
               src={image}
               alt={name}
-              width={80}
-              height={80}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           ) : (
-            initials
+            <div className="flex items-center justify-center w-full h-full text-white font-bold text-xl">
+              {initials}
+            </div>
           )}
         </div>
         <h3 className="font-bold text-white text-lg">{name}</h3>
