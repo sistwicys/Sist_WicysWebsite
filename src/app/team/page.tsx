@@ -36,33 +36,93 @@ export default function TeamPage() {
           </p>
         </div>
 
-        {grouped.map((category) => (
-          <section key={category.key} className="mb-16">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-white">
-                {category.label}
-              </h2>
-              {category.subtitle && (
-                <p className="text-gray-400 mt-2">{category.subtitle}</p>
-              )}
-            </div>
-            <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6">
-              {category.members.map((member, index) => (
-                <div key={member.id} className="w-[300px] shrink-0 h-full">
-                  <TeamCard
-                    name={member.name}
-                    role={member.role}
-                    bio={member.bio}
-                    linkedin={member.linkedin}
-                    image={member.image}
-                    index={index}
-                    className="h-full"
-                  />
+        {grouped.map((category) => {
+          // Special handling for Event Coordinators: show first 4, then remaining below
+          if (category.key === "coordinator") {
+            const firstFour = category.members.slice(0, 4);
+            const remaining = category.members.slice(4);
+            
+            return (
+              <section key={category.key} className="mb-16">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-white">
+                    {category.label}
+                  </h2>
+                  {category.subtitle && (
+                    <p className="text-gray-400 mt-2">{category.subtitle}</p>
+                  )}
                 </div>
-              ))}
-            </div>
-          </section>
-        ))}
+                
+                {/* First 4 coordinators */}
+                {firstFour.length > 0 && (
+                  <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6 mb-8">
+                    {firstFour.map((member, index) => (
+                      <div key={member.id} className="w-[300px] shrink-0 h-full">
+                        <TeamCard
+                          name={member.name}
+                          role={member.role}
+                          bio={member.bio}
+                          linkedin={member.linkedin}
+                          image={member.image}
+                          index={index}
+                          className="h-full"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+                
+                {/* Remaining coordinators (if any) */}
+                {remaining.length > 0 && (
+                  <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6">
+                    {remaining.map((member, index) => (
+                      <div key={member.id} className="w-[300px] shrink-0 h-full">
+                        <TeamCard
+                          name={member.name}
+                          role={member.role}
+                          bio={member.bio}
+                          linkedin={member.linkedin}
+                          image={member.image}
+                          index={index + 4} // Continue index animation
+                          className="h-full"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            );
+          }
+          
+          // Default handling for all other categories
+          return (
+            <section key={category.key} className="mb-16">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-white">
+                  {category.label}
+                </h2>
+                {category.subtitle && (
+                  <p className="text-gray-400 mt-2">{category.subtitle}</p>
+                )}
+              </div>
+              <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6">
+                {category.members.map((member, index) => (
+                  <div key={member.id} className="w-[300px] shrink-0 h-full">
+                    <TeamCard
+                      name={member.name}
+                      role={member.role}
+                      bio={member.bio}
+                      linkedin={member.linkedin}
+                      image={member.image}
+                      index={index}
+                      className="h-full"
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })}
 
         {grouped.length === 0 && (
           <div className="text-center py-20">
