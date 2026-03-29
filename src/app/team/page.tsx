@@ -8,15 +8,15 @@ export const metadata: Metadata = {
 };
 
 export default function TeamPage() {
-   // Group members by category
-   const categories = [
-     { key: "faculty", label: "Faculty Coordinators" },
-     { key: "leadership", label: "Chapter Leadership" },
-     { key: "core", label: "Core Team" },
-     { key: "chair", label: "Chairpersons" },
-     { key: "lead", label: "Department Leads", subtitle: "Driving technical and creative initiatives" },
-     { key: "coordinator", label: "Event Coordinators" },
-   ];
+  // Group members by category
+  const categories = [
+    { key: "faculty", label: "Faculty Coordinators" },
+    { key: "leadership", label: "Chapter Leadership" },
+    { key: "core", label: "Core Team" },
+    { key: "chair", label: "Chairpersons" },
+    { key: "lead", label: "Department Leads", subtitle: "Driving technical and creative initiatives" },
+    { key: "coordinator", label: "Event Coordinators" },
+  ];
 
   const grouped = categories.map(cat => ({
     ...cat,
@@ -54,6 +54,7 @@ export default function TeamPage() {
                     role={member.role}
                     bio={member.bio}
                     linkedin={member.linkedin}
+                    image={member.image}
                     index={index}
                     className="h-full"
                   />
