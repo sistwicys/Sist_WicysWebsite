@@ -200,7 +200,7 @@ export const teamMembers: TeamMember[] = [
     name: "Shugal Mufashira S",
     role: "Content Team Lead",
     bio: "Crafts compelling content and narratives that communicate the chapter's vision and engage the community.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/shugal-mufashira-201603326?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     category: "lead",
     image: "/profile/Shugal.jpeg",
 
