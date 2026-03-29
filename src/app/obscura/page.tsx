@@ -189,6 +189,24 @@ export default function Home() {
                 <span>📍</span>
                 <span>Sathyabama Institute of Science and Technology, Chennai</span>
               </div>
+              <span style={{
+                color: "rgba(212, 138, 32, 0.5)",
+                fontSize: "1.2rem",
+                lineHeight: 1,
+              }}>|</span>
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                color: "var(--color-gold)",
+                fontFamily: "var(--font-heading)",
+                fontSize: "0.8rem",
+                letterSpacing: "0.05em",
+                textTransform: "uppercase",
+              }}>
+                <span>⏰</span>
+                <span>Registration closes: April 7, 10:50 PM</span>
+              </div>
             </div>
             
           </div>
