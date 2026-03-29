@@ -230,7 +230,7 @@ export const teamMembers: TeamMember[] = [
      bio: "2nd year student assisting with event planning and coordination.",
      linkedin: "https://www.linkedin.com/in/sam-daniel-4178bb339?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
      category: "coordinator",
-     image: "/profile/SamDaniel.jpeg",
+     image: "/profile/SamDaniel.PNG",
    },
    {
      id: "13",
