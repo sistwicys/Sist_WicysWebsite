@@ -167,6 +167,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Assists in administrative duties and bridges communication across chapter teams for seamless coordination.",
     linkedin: "https://www.linkedin.com/in/samyuktha-m-8175a92a7/",
     category: "core",
+    image: "/profile/Samyuktha.jpeg",
   },
   {
     id: "6",
@@ -221,7 +222,6 @@ export const teamMembers: TeamMember[] = [
      bio: "2nd year student assisting with event planning and coordination.",
      linkedin: "https://www.linkedin.com/in/claims-jose-christoper?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "coordinator",
-     image: "/profile/Joe.jpeg",
    },
    {
      id: "12",
@@ -239,7 +239,7 @@ export const teamMembers: TeamMember[] = [
      bio: "2nd year student assisting with event planning and coordination.",
      linkedin: "https://www.linkedin.com/in/muthu-lakshmanan-s-a32827323?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "coordinator",
-     image: "/profile/MuthuLakshmanan.jpeg",
+     image: "/profile/Muthu.jpeg",
    },
    {
      id: "14",
@@ -272,14 +272,25 @@ export const teamMembers: TeamMember[] = [
      bio: "EC MEMBER - Serving as Chairperson for WiCyS Sathyabama Student Chapter.",
      linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "chair",
+     image: "/profile/Tahsin.jpeg",
+
    },
    {
      id: "18",
      name: "K Durgashree",
      role: "Event Coordinator",
      bio: "2nd year student assisting with event planning and coordination.",
-     linkedin: "https://www.linkedin.com/in/mohammed-tahsin-016b62337?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+     linkedin: "https://www.linkedin.com/",
      category: "coordinator",
+   },
+   {
+     id: "19",
+     name: "Mithra",
+     role: "Event Coordinator",
+     bio: "2nd year student assisting with event planning and coordination.",
+     linkedin: "https://www.linkedin.com/in/mithra-cybersecurity?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+     category: "coordinator",
+     image: "/profile/Mithra.jpeg",
    },
 ];
 
