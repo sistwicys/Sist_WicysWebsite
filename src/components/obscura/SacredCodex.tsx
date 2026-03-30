@@ -9,7 +9,7 @@ const rules = [
   "📍 Mode: Offline",
   "⏰ Time: 9:00 AM – 6:00 PM",
   "👥 Team Size: Max 3 members",
-  "💰 Registration Fee: ₹150 per person",
+  "💰 Registration Fee: ₹150 per person (No Refund)",
   "🎓 Open to students and industry professionals",
   "",
   "Team Formation Rules",

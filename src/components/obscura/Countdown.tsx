@@ -37,12 +37,23 @@ export default function Countdown() {
   const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
-    <div style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "0.5rem",
-      justifyContent: "center",
-    }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}>
+      <p style={{
+        fontFamily: "'Cinzel Decorative', serif",
+        fontSize: "1rem",
+        letterSpacing: "0.2em",
+        color: "#d4af37",
+        textTransform: "uppercase",
+        margin: 0,
+      }}>
+        REGISTRATION CLOSES IN
+      </p>
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "0.5rem",
+        justifyContent: "center",
+      }}>
       {[
         { val: timeLeft.days, label: "Days" },
         { val: timeLeft.hours, label: "Hours" },
@@ -56,6 +67,7 @@ export default function Countdown() {
           {i < 3 && <span className="countdown-separator">•</span>}
         </div>
       ))}
+      </div>
     </div>
   );
 }
