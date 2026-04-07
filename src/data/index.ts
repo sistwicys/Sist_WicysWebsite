@@ -50,16 +50,7 @@ export const events: Event[] = [
       "A conversation on women and cancer by Dr. Shilpa Germaine Alfred.",
     status: "past",
   },
-  {
-    id: "9",
-    title: "OBSCURA – Capture The Flag",
-    category: "hackathon",
-    date: "February 28, 2025",
-    description:
-      "A magical National Level CTF experience blending cryptography, steganography, and web exploitation challenges in an enchanted theme.",
-    status: "past",
-    highlight: true,
-  },
+  
   {
     id: "11",
     title: "Hello World",
