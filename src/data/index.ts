@@ -40,7 +40,7 @@ export const events: Event[] = [
     description:
       "A panel discussion on the societal impacts of women in cybersecurity",
     status: "past",
-    image: "/event/society.jpeg",
+    image: "/event/society.jpg",
   },
   {
     id: "5",
