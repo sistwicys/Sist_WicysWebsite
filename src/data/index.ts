@@ -141,6 +141,7 @@ export const teamMembers: TeamMember[] = [
     bio: "Third year B.Tech CSE student specializing in ethical hacking. National-level CTF competitor and security researcher.",
     linkedin: "https://www.linkedin.com/in/sudhiksha-n-m-16085a342/",
     category: "leadership",
+    image: "/profile/Sudhiksha.jpeg",
     
   },
   {
@@ -185,6 +186,7 @@ export const teamMembers: TeamMember[] = [
      bio: "Passionate about binary exploitation and reverse engineering. Contributes to open-source security tools.",
      linkedin: "https://www.linkedin.com/in/jensen-j-989a003b3/",
      category: "lead",
+     image: "/profile/Jensen.png",
    },
   {
     id: "8",

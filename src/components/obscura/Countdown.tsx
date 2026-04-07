@@ -12,8 +12,8 @@ export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Target date: April 7, 2026 (fest date)
-    const targetDate = new Date("2026-04-07T23:59:59+05:30").getTime();
+    // Target date: April 10, 2026 (fest date)
+    const targetDate = new Date("2026-04-10T23:59:59+05:30").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -54,19 +54,19 @@ export default function Countdown() {
         gap: "0.5rem",
         justifyContent: "center",
       }}>
-      {[
-        { val: timeLeft.days, label: "Days" },
-        { val: timeLeft.hours, label: "Hours" },
-        { val: timeLeft.minutes, label: "Min" },
-        { val: timeLeft.seconds, label: "Sec" },
-      ].map((item, i) => (
-        <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <div style={{ textAlign: "center" }}>
-            <div className="countdown-item">{pad(item.val)}</div>
+        {[
+          { val: timeLeft.days, label: "Days" },
+          { val: timeLeft.hours, label: "Hours" },
+          { val: timeLeft.minutes, label: "Min" },
+          { val: timeLeft.seconds, label: "Sec" },
+        ].map((item, i) => (
+          <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <div style={{ textAlign: "center" }}>
+              <div className="countdown-item">{pad(item.val)}</div>
+            </div>
+            {i < 3 && <span className="countdown-separator">•</span>}
           </div>
-          {i < 3 && <span className="countdown-separator">•</span>}
-        </div>
-      ))}
+        ))}
       </div>
     </div>
   );
