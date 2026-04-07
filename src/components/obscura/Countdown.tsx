@@ -46,7 +46,7 @@ export default function Countdown() {
         textTransform: "uppercase",
         margin: 0,
       }}>
-        REGISTRATION CLOSES IN
+        EVENT STARTS IN
       </p>
       <div style={{
         display: "flex",
