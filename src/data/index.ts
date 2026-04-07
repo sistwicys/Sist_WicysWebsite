@@ -40,6 +40,7 @@ export const events: Event[] = [
     description:
       "A panel discussion on the societal impacts of women in cybersecurity",
     status: "past",
+    image: "/event/society.jpeg",
   },
   {
     id: "5",
@@ -49,6 +50,7 @@ export const events: Event[] = [
     description:
       "A conversation on women and cancer by Dr. Shilpa Germaine Alfred.",
     status: "past",
+    image: "/event/sheprevails.jpeg",
   },
   
   {
